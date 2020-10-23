@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>info</title>
+        <title>news4</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,11 +25,7 @@
         </style>
     </head>
     <body class="antialiased">
-            <p>hot news</p>
-            <p><a href="/news/news1">news1</a></p>
-            <p><a href="/news/news2">news2</a></p>
-            <p><a href="/news/news3">news3</a></p>
-            <p><a href="/news/news4">news4</a></p>
-            <p><a href="/">back to welcome page</a></p>
+            <p>news4</p>
+            <p><a href="/news">back news</a></p>
     </body>
 </html>

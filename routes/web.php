@@ -1,6 +1,9 @@
 <?php
 //phpinfo();
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\admin\NewsController;
 
 
 /*
@@ -14,22 +17,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::get('/', [Controller::class, 'showStartingPage'])
+    ->name('/');
+//Route::group(['prefix' => 'admin'], function() {
+//    Route::get('/news', [NewsController::class, 'index']);
+//    Route::get('/news/create', [NewsController::class, 'create']);
+//    Route::get('/news/edit/{id}', [NewsController::class, 'edit'])
+//        ->where('id', '\d+');
+//    Route::get('/news/delete/{id}', [NewsController::class, 'destroy'])
+//        ->where('id', '\d+');
+//});
+
+Route::group(['prefix' => 'news'], function() {
+    Route::get('/', [Controller::class, 'index'])
+    ->name('news');
+    Route::get('/{category}', [Controller::class, 'showCategoryList'])
+        ->name('news.category');
+    Route::get('/{category}/{id}', [Controller::class, 'showNewsList'])
+        ->name('news.category.id');
 });
-
-// Route::get('/hello/{name}', function($name){
-//     echo "Hello, " . $name;
-// })->where('name', '\w+');
-
-// Route::get('/hello', function () {
-//     return view('hello');
-// });
-
-Route::get('/{info}', function ($info) {
-    return view($info);
-});
-
-Route::get('/news/{name}', function ($name) {
-    return view($name);
-});
+Route::get('/about', [Controller::class, 'greetUser'])
+    ->name('about');
+Route::get('/auth', [AuthController::class, 'auth'])
+    ->name('auth');
+Route::get('admin/create', [App\Http\Controllers\admin\NewsController::class, 'create'])
+    ->name('admin.create');

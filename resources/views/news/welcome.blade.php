@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>news2</title>
+        <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -24,8 +25,13 @@
             }
         </style>
     </head>
+
     <body class="antialiased">
-            <p>news2</p>
-            <p><a href="/news">back news</a></p>
+        <h2>Hello user</h2>
+        <h4>links ta pages:</h4>
+        <p><a href={{ route('auth') }}>authentication</a></p>
+        <p><a href={{ route('admin.create') }}>admin</a></p>
+        <p><a href={{ route('about') }}>about the project</a></p>
+        <p><a href={{ route('news') }}>news</a></p>
     </body>
 </html>

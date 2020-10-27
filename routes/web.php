@@ -44,3 +44,7 @@ Route::get('/auth', [AuthController::class, 'auth'])
     ->name('auth');
 Route::get('admin/create', [App\Http\Controllers\admin\NewsController::class, 'create'])
     ->name('admin.create');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

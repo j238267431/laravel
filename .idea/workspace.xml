@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5de78144-3711-4250-8f97-f3228b2622ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/news/auth.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/news/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/news/greetingPage.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/news/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/news/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/news/showNews.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/info.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,12 +138,10 @@
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
@@ -175,6 +167,8 @@
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jEPD4NswCuiXERwOjUdyKP6ued" />
@@ -300,11 +294,11 @@
     </state>
     <state width="1398" height="233" key="GridCell.Tab.2.right/0.23.1440.823@0.23.1440.823" timestamp="1603604482419" />
     <state width="1398" height="233" key="GridCell.Tab.2.right/0.23.1440.828@0.23.1440.828" timestamp="1603578228444" />
-    <state x="522" y="361" key="NewPhpFileDialog" timestamp="1603632554542">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="522" y="362" key="NewPhpFileDialog" timestamp="1603791172714">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="522" y="361" key="NewPhpFileDialog/0.23.1440.825@0.23.1440.825" timestamp="1603632554542" />
-    <state x="522" y="362" key="NewPhpFileDialog/0.23.1440.827@0.23.1440.827" timestamp="1603534413108" />
+    <state x="522" y="362" key="NewPhpFileDialog/0.23.1440.827@0.23.1440.827" timestamp="1603791172714" />
     <state x="385" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1603624370328">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

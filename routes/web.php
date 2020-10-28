@@ -30,20 +30,31 @@ Route::get('/', [Controller::class, 'showStartingPage'])
 //        ->where('id', '\d+');
 //});
 
-Route::group(['prefix' => 'news'], function() {
-    Route::get('/', [Controller::class, 'index'])
-    ->name('news');
-    Route::get('/{category}', [Controller::class, 'showCategoryList'])
-        ->name('news.category');
-    Route::get('/{category}/{id}', [Controller::class, 'showNewsList'])
-        ->name('news.category.id');
-});
-Route::get('/about', [Controller::class, 'greetUser'])
-    ->name('about');
-Route::get('/auth', [AuthController::class, 'auth'])
-    ->name('auth');
-Route::get('admin/create', [App\Http\Controllers\admin\NewsController::class, 'create'])
-    ->name('admin.create');
+
+Route::get('/', [\App\Http\Controllers\Categories\CategoryController::class, 'index'])
+    ->name('/');
+Route::get('/categories/{id}', [\App\Http\Controllers\Categories\CategoryController::class, 'show'])
+//    ->where('id', '\+d')
+    ->name('categories.show');
+Route::get('/categories/{id}/{newsId}', [\App\Http\Controllers\NewsController::class, 'indexNews'])
+    ->name('categories.show.news');
+
+
+//
+//Route::group(['prefix' => 'news'], function() {
+//    Route::get('/', [Controller::class, 'index'])
+//    ->name('news');
+//    Route::get('/{category}', [Controller::class, 'showCategoryList'])
+//        ->name('news.category');
+//    Route::get('/{category}/{id}', [Controller::class, 'showNewsList'])
+//        ->name('news.category.id');
+//});
+//Route::get('/about', [Controller::class, 'greetUser'])
+//    ->name('about');
+//Route::get('/auth', [AuthController::class, 'auth'])
+//    ->name('auth');
+//Route::get('admin/create', [App\Http\Controllers\admin\NewsController::class, 'create'])
+//    ->name('admin.create');
 
 Auth::routes();
 

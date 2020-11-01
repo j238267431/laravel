@@ -38,7 +38,8 @@ Route::get('/categories/{id}', [\App\Http\Controllers\Categories\CategoryControl
     ->name('categories.show');
 Route::get('/categories/{id}/{newsId}', [\App\Http\Controllers\NewsController::class, 'indexNews'])
     ->name('categories.show.news');
-
+Route::resource('/form/feedback', \App\Http\Controllers\forms\FeedBackController::class);
+Route::resource('/form/request', \App\Http\Controllers\forms\DownloadController::class);
 
 //
 //Route::group(['prefix' => 'news'], function() {
